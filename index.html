@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Quick Launch</title>
+  <title>Blank</title>
   <link rel="icon" href="favicon.png" type="image/png" />
   <script>
     window.onload = () => {
-      window.open('javascript:(()=>{let w=window.open('about:blank');w&&setTimeout(()=>w.close(),1)})();');
+      setTimeout(() => {
+        window.close();
+      }, 100); // Close itself after 100ms
     };
   </script>
 </head>
 <body>
-  <p>Launching and closing...</p>
+  <p>This tab will self-destruct...</p>
 </body>
 </html>
